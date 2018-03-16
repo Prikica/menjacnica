@@ -42,7 +42,6 @@ public class Valuta {
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((kursnaLista == null) ? 0 : kursnaLista.hashCode());
 		result = prime * result + ((naziv == null) ? 0 : naziv.hashCode());
 		result = prime * result + ((skraceniNaziv == null) ? 0 : skraceniNaziv.hashCode());
 		return result;
@@ -57,11 +56,6 @@ public class Valuta {
 		if (getClass() != obj.getClass())
 			return false;
 		Valuta other = (Valuta) obj;
-		if (kursnaLista == null) {
-			if (other.kursnaLista != null)
-				return false;
-		} else if (!kursnaLista.equals(other.kursnaLista))
-			return false;
 		if (naziv == null) {
 			if (other.naziv != null)
 				return false;
